@@ -70,15 +70,12 @@ export default function(styleApi: IStyleAPI, file?: string): IStyleItem[] {
   return [
     // none (don't sort them, because side-effects may need a particular ordering)
     styleItemByType[memberSortSyntaxOrder[0]],
-    {separator: true},
 
     // all
     styleItemByType[memberSortSyntaxOrder[1]],
-    {separator: true},
 
     // multiple
     styleItemByType[memberSortSyntaxOrder[2]],
-    {separator: true},
 
     // single
     styleItemByType[memberSortSyntaxOrder[3]],
